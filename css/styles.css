@@ -259,6 +259,27 @@ h1, h2, h3 {
   color: var(--text-muted);
 }
 
+.domain-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.domain-row + .domain-row {
+  margin-top: 10px;
+}
+
+.domain-row p {
+  margin: 0;
+}
+
+.domain-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+}
+
 /* Contact */
 .contact-links {
   display: flex;

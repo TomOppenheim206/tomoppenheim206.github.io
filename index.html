@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom Oppenheim — Data Engineer</title>
+  <meta name="description" content="Tom Oppenheim — Aviation & Healthcare Data Engineer." />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-  <h1>Hello world</h1>
-  <p>This is my website.</p>
-</body>
 
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">Tom Oppenheim</a>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero-content reveal">
+      <p class="eyebrow">Data Engineering</p>
+      <h1>Tom Oppenheim</h1>
+      <p class="hero-subtitle">Aviation &amp; Healthcare Data Engineer</p>
+      <p class="hero-tagline">
+        I build reliable data pipelines for industries where the data has to be right —
+        turning complex, regulated systems into something people can actually trust.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section id="about" class="section reveal">
+      <h2>About</h2>
+      <div class="section-body">
+        <p>
+          I'm a data engineer working across aviation and healthcare — two industries
+          where compliance, accuracy, and uptime aren't optional. I design and maintain
+          pipelines that move messy, high-stakes data from source systems into models
+          and dashboards that teams actually rely on.
+        </p>
+        <p>
+          Outside of the day job, I build things for fun — mostly small games and
+          interactive projects where I get to work end-to-end on something with an
+          audience of exactly one: me.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p>Python, SQL</p>
+        </div>
+        <div class="skill-card">
+          <h3>Data Engineering</h3>
+          <p>ETL / ELT pipelines, dbt, data modeling, orchestration</p>
+        </div>
+        <div class="skill-card">
+          <h3>Platforms</h3>
+          <p>Cloud data warehousing, workflow scheduling, version control</p>
+        </div>
+        <div class="skill-card">
+          <h3>Domain</h3>
+          <p>Aviation systems data, healthcare data &amp; compliance</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+      <p class="section-lede">A few side projects I build in my spare time.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Crashy</h3>
+          <p class="project-meta">Unity</p>
+          <p>A game built in Unity with a custom character and animation pipeline.</p>
+          <a href="https://github.com/TomOppenheim206/Crashy" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+        <article class="project-card">
+          <h3>3DJUMPER</h3>
+          <p class="project-meta">Godot</p>
+          <p>A 3D platformer built in Godot.</p>
+          <a href="https://github.com/TomOppenheim206/3DJUMPER" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+        <article class="project-card">
+          <h3>Happy Wife Happy Life</h3>
+          <p class="project-meta">Godot &middot; Android</p>
+          <p>A mobile game built in Godot, shipped as an Android app.</p>
+          <a href="https://github.com/TomOppenheim206/HappyWifeHappyLife" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>Get in Touch</h2>
+      <p class="section-lede">Open to conversations about data engineering, aviation &amp; healthcare data, or the occasional game dev tangent.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:tomdoppenheim@gmail.com">Email</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/tom-o-608a9357/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="contact-link" href="https://github.com/TomOppenheim206" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Tom Oppenheim</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
